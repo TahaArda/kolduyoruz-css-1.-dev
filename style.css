@@ -1,0 +1,130 @@
+body {
+    background-color: #9bdcfa; /* Hafif mavi rengi kullanabilirsiniz */
+}
+
+/* Navbar stilini özelleştirme */
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center; /* Etiketleri ortala */
+    width: 100%;
+    padding: 10px 0; /* Navbarın yüksekliğini artırır */
+    border-radius: 25px; /* Oval köşeler ekler */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block; /* Navbar'ı yatay hizala */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s; 
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 100%;
+    background-color: #ff5733;
+    height: 2px;
+    transition: right 0.3s;
+}
+
+nav a:hover::before {
+    right: 0;
+}
+
+/* Div kutusu stilini özelleştirme */
+.content {
+    background-color: #f0f0f0; /* Div kutusu arka plan rengi */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 600px; 
+    height: 400px; 
+    float: left; 
+    transition: border 0.3s;
+}
+
+.content:hover {
+    border: 2px solid #ff5733; /* İstediğiniz renk ve kalınlık için değerleri ayarlayabilirsiniz */
+}
+
+img {
+    float: right;
+    margin-left: 10px;
+    width: 300px;
+    height: auto;
+}
+
+.kontent {
+    background-color: #f0f0f0; /* Div kutusu arka plan rengi */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 1100px; 
+    height: 400px; 
+    float: left; 
+    transition: border 0.3s;
+}
+
+.kontent:hover {
+    border: 2px solid #ff5733; /* İstediğiniz renk ve kalınlık için değerleri ayarlayabilirsiniz */
+}
+
+p {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.hakkımdakutu {
+    background-color: #f0f0f0; /* Div kutusu arka plan rengi */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 1100px; 
+    height: 600px; 
+    float: left; 
+    transition: border 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.hakkımdakutu:hover {
+    border: 2px solid #ff5733;
+}
+
+.iletişimkutu {
+    background-color: #f0f0f0; /* Div kutusu arka plan rengi */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 1100px; 
+    height: 600px; 
+    float: left; 
+    transition: border 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.iletişimkutu:hover {
+    border: 2px solid #ff5733;
+}
+
